@@ -7,7 +7,7 @@ Este é um teste técnico destinado a avaliar as habilidades na realização de 
 
 - JavaScript;
 - Visual Studio Code; 
-- Cypress;
+- Cypress.
 
 Para iniciar os testes, execute o seguinte comando no terminal do VS Code:
 
