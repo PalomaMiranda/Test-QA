@@ -5,7 +5,7 @@ Este é um teste técnico destinado a avaliar as habilidades na realização de 
 
 📋 Pré-requisitos:
 
-- JavaScript;
+- Node.js 18.14.0;
 - Visual Studio Code; 
 - Cypress.
 
