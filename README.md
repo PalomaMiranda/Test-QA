@@ -9,6 +9,8 @@ Este é um teste técnico destinado a avaliar as habilidades na realização de 
 - Visual Studio Code; 
 - Cypress 12.5.1.
 
-Para iniciar os testes, execute o seguinte comando no terminal do VS Code:
+Para iniciar os testes, execute os seguintes comandos no terminal do VS Code: 
+
+npx cypress install
 
 npx cypress open
