@@ -7,7 +7,7 @@ describe("Teste Seguros Promo", function () {
         cy.visit("/");
         cy.ignoreLoopLimitExceeded();
         cy.ignoreCannotReadId();
-        Cypress.on('uncaught:exception', (err, runnable) => { //ignora erros da página
+        Cypress.on('uncaught:exception', (err, runnable) => {
             return false
         });
     });
@@ -28,8 +28,8 @@ describe("Teste Seguros Promo", function () {
         searchActions.clickSelectButton();
         paymentActions.clickButtonContinue();
         paymentActions.dadosSegurado();
-        paymentActions.pagamentoCartãoCrédito();
-        paymentActions.dadosCartão();
+        paymentActions.pagamentoCartaoCredito();
+        paymentActions.dadosCartao();
         paymentActions.dadosContato();
         paymentActions.finalizarPagamento();
     });

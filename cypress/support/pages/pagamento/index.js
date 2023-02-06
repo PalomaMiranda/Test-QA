@@ -11,9 +11,9 @@ class paymentActions {
         cy.get(el.cpfSegurado).type("84678723226");
     }
 
-    pagamentoCartãoCrédito() {
-        cy.get(el.cartãoCrédito).should("be.visible");
-        cy.get(el.cartãoCrédito).click();
+    pagamentoCartaoCredito() {
+        cy.get(el.cartaoCredito).should("be.visible");
+        cy.get(el.cartaoCredito).click();
     }
 
     pagamentoBoleto() {
@@ -31,7 +31,7 @@ class paymentActions {
         cy.get(el.emailContato).type("joaquimjosé10@gmail.com");
         cy.get(el.telefoneContato).type("11999999999");
         cy.get(el.cepContato).type("02725050");
-        cy.get(el.númeroContato).type("28");
+        cy.get(el.numeroContato).type("28");
         cy.get(el.complementoContato).type("Apartamento 11");
         cy.get(el.selecioneEstadoContato).type("São Paulo");
     }
@@ -41,25 +41,25 @@ class paymentActions {
         cy.get(el.efetuarPagamento).click();
     }
 
-    dadosCartão() {
+    dadosCartao() {
         cy.get(el.masterCard).should("be.visible");
         cy.get(el.masterCard).click();
-        cy.get(el.cartão).type("5401689389702139");
-        cy.get(el.nomeCartão).type("Felipe André Raul Assis");
-        cy.get(el.cpfCartão).type("84678723226");
-        cy.get(el.mêsCartão).find("option:contains('10')").then(option => {
+        cy.get(el.cartao).type("5401689389702139");
+        cy.get(el.nomeCartao).type("Felipe André Raul Assis");
+        cy.get(el.cpfCartao).type("84678723226");
+        cy.get(el.mesCartao).find("option:contains('10')").then(option => {
             option.prop("selected", true);
             option.click();
         });
 
-        cy.get(el.anoCartão).find("option:contains('2024')").then(option => {
+        cy.get(el.anoCartao).find("option:contains('2024')").then(option => {
             option.prop("selected", true);
             option.click();
         });
 
-        cy.get(el.cvvCartão).type("428");
-        cy.get(el.parcelamentoCartão).should("be.visible");
-        cy.get(el.parcelamentoCartão).click();
+        cy.get(el.cvvCartao).type("428");
+        cy.get(el.parcelamentoCartao).should("be.visible");
+        cy.get(el.parcelamentoCartao).click();
     }
 
     cupomDesconto() {
