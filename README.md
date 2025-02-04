@@ -1,5 +1,5 @@
-# Test-QA
-Desafio técnico - Analista de Testes QA
+## Teste de Quality Assurance - Sistema Interno
+# Desafio Técnico - Analista de Testes de Qualidade de Software
 
 Este é um teste técnico destinado a avaliar as habilidades na realização de testes usando o Cypress.io como ferramenta de automação.
 
@@ -11,6 +11,6 @@ Este é um teste técnico destinado a avaliar as habilidades na realização de 
 
 Para iniciar os testes, execute os seguintes comandos no terminal do VS Code: 
 
-npx cypress install
+- npx cypress install;
 
-npx cypress open
+- npx cypress open. 
